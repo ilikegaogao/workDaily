@@ -209,15 +209,8 @@ http://pointuat.einwin.com/euh/#/home-platform
 4.部署新版本, 交接工作	
 
 
-
-创建一个svn, 把工作内容同步上去
-	
-ky-zhongwk
-zhong0945
-
-https://THINK-Lx/svn/wwwww/
-
-
+git 使用
+https://segmentfault.com/a/1190000003728094
 
 
 20171212
