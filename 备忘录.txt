@@ -1,0 +1,2499 @@
+app       10016
+business  10017
+customer  10020
+feedback  10021
+finance   10022
+house     10023
+common    10019
+webCom    10026
+member    10024
+
+
+ 
+地址：https://120.76.231.83/svn/ccwy/
+用户名：zhongweikun
+密码： zhongweikun0810
+
+ky-zhongwk / zhong0952
+
+这是公司外网svn，以后都用这个
+	
+
+
+
+自己的工具     
+
+简单的增删改查, 
+
+图片/文件上传下载, 
+
+Excel 导入导出, 导出图片 
+
+手机短信验证, 微信或支付宝支付
+
+java 使用脚本可以干什么
+
+职位信息
+职位描述：
+二．	高级Java工程师
+岗位职责：
+1. 按照工作计划，按时完成相关的设计、开发、单元测试任务；
+2. 逻辑思维能力强，可以熟练的进行技术分析，发现问题、解决问题；
+3. 能独立完成或在有限指导下完成较复杂的任务；
+4. 具有熟练的编码能力和技术学习能力，能够独立解决产品开发中技术难题，且具有创新精神；
+5. 具有规范的代码编写习惯、良好的技术文档编写能力、流利的表达能力。
+
+
+
+记住了, 问问自己, 这样做对自己有什么好处, 想太多没用, 她又开始犹豫了,所以我这边要静观其变,追得太近,她就逃得越远.
+随其自然,自然就好. 因为有许多事情, 你没有告诉我, 我偶尔会胡想, 这时候就需要你的解释.
+
+冷静下来!
+==========================================================================
+20170925
+
+1、app物业相关公共部分
+	我的评价           OK	
+
+	我收到的评价      OK
+	
+2、app新增评论: 
+    房源委托评论   ...开始   ok 
+    客源委托评论             ok 
+    验真评论              
+
+3、app物业相关公共部分.
+    新增客源委托           OK
+
+4、完成上周未完成的工作。
+	
+5、配合进行接口联调。
+
+===========================================================================
+
+1.后台，财务管理，平台收益。（0.5天）    ok 
+
+2.后台，反馈管理，举报管理，房源举报。（0.5天）  ok 
+
+3.后台，反馈管理，举报管理，客源共享举报。（0.5天）  ok    feedback模块的xml文件检查  1小时   OK
+
+4.app-经济人，我的举报，房源举报、客源共享举报（1天）  9.22 上午   OK
+
+5.app-公共部分，意见反馈，新增和列表（0.5天）  ok 
+
+6.自己负责的所有新增记录的接口加入bid、bcode、createdBy、creationDate字段。   ok 
+  
+  自己负责的所有后台查询列表的接口加入bcode的like条件，用于做数据权限（2天）
+  
+7.配合后台和app开发人员进行接口联调。
+
+1.注意所有的新增记录都要通过SessionUser.getSessionUser()获取用户信息然后获取bid、bcode、uid塞入记录里面去，所有后台查询列表的接口加入bcode的like条件，用于做数据权限。
+
+
+===========================================================================
+1.app-经济人，客源委托（1天）   ok 
+
+2.后台，业务管理，房源验真记录（0.5天）  周五   OK    
+
+3.app-经纪人，我的评价。（1天） 将三组数据查出来, 组合封装并返回结果 no , 修改   ok 
+
+4.app-经纪人，我收到的评价。（1天）  房源验真评论    ok 
+
+5.后台，反馈管理，意见反馈。（1天）   ok 
+
+6.后台，反馈管理，评价管理。（0.5天）  ok 
+
+=============================================================================
+
+
+|page |否 |int|当前页|
+|pageSize |否 |int|每页记录数|
+
+新增入园记录  : 省市区商圈信息 经纪人,门岗人员,小区信息 ,
+
+新增评价 :
+房源委托评价,   
+
+房源验真记录Id(省市区商圈信息,房源  小区, 经纪人,物业管家,)  评价标签 
+     物业人员 新增OK    经纪人 新增    OK
+
+客源委托评价,   物业人员 新增OK  经纪人  OK
+
+房源验真评价,    老王  完成  OK
+
+入园记录评价,  点赞  恶心...  嘉宝完成   OK
+
+房源举报: 
+
+客源共享举报:
+
+意见与反馈   OK
+
+新增带看反馈时: update 入园记录表 ,新增带看反馈记录, 查询
+
+
+新的后台地址
+http://web.einwin.com/auth/#/home
+
+主数据王炳晗  南京
+
+
+find -name hosts  文件名   找文件的名单
+
+pwd返回当前路径	
+
+netstat -tlpt 查看java进程
+
+sudo cp -r  复制 目标文件 存放位置文件夹
+
+netstat -tnlp  查看启动的端口
+
+解压文件
+sudo unzip euh.zip -d /usr/local/nginx/html/euh
+
+文件移动命令mv
+命令格式：mv [-fiv] source destination
+
+打印日志
+ tail -f file-center.log
+
+ tcpdump -i ens160 port 10017 -w 'i.cap'
+抓包   -i  网关名 port 端口号  -w  ‘  ’ 写成文件
+
+王贤宗_java 2017/11/2 17:38:47
+route  查看网关
+2017/11/2 17:41:03
+王贤宗_java 2017/11/2 17:41:03
+ yum install tcpdump 下载 tcpdump    
+
+sz i.cap  下载文件
+
+王贤宗_java 2017/11/2 17:41:34
+rz  上传文件
+
+
+ps -ef | grep  java
+
+
+http://192.168.2.170:8080/mdm
+
+http://pointuat.einwin.com/euh/#/home-platform
+
+
+/tmp/20171213-111246-8df8
+
+
+
+/tmp/20171213-115252-2645 项目
+=============================================================================
+=============================================================================
+=================================== 日志 ====================================
+修改时间20171213
+面试提问:
+1.开发模式:迭代开发?前后端分离,工作内容:接口开发
+
+2.发放工资的日期,10,15
+
+3.周末加班,调休,年终奖
+
+4.上班打卡方式
+
+
+20171213
+1.开发  修改登录密码, 对接主数据, 测试, 联调安卓和iOS
+
+2.修改登录密码  接口文档新增
+
+3.组织树重新构建
+
+4.部署新版本, 交接工作	
+
+
+
+创建一个svn, 把工作内容同步上去
+	
+ky-zhongwk
+zhong0945
+
+https://THINK-Lx/svn/wwwww/
+
+
+
+
+20171212
+1.忘记密码的接口文档新增
+
+2.登录接口联调 ,忘记密码联调, 安卓 
+
+3.测试忘记密码,
+
+4.部署项目, 恢复原来的数据html 
+
+5.组织树的重新创建..
+
+
+
+"0000000200010002"深圳 
+"0000000200010002"河北分公司
+
+
+      "captchaId": "e8649203-ac5b-40f5-89b1-da64574624b1"
+
+ "captchaId": "07d08502-392e-4040-ba87-67b94082498f"
+"captchaId": "67e81bb0-22de-4321-94db-fb9a05610d71"
+
+{
+  "code": 0,
+  "msg": "新密码设置成功",
+  "data": {
+    "result": "true",
+    "resCode": 200,
+    "data": {
+      "password": "21218cca77804d2ba1922c33e0151105",
+      "id": "21341637-614a-420f-bb32-60436d0b0c7f"
+    },
+    "resMsg": "操作成功"
+  }
+}
+
+
+{
+  "code": 0,
+  "msg": "新密码设置失败",
+  "data": {
+    "result": "false",
+    "resCode": 87,
+    "data": {},
+    "resMsg": "验证码已失效"
+  }
+}
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+0
+0
+0
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+1
+1
+1
+0
+1
+
+20171211
+
+1.新增一个u房数据库没有的, 主数据有的账号	
+
+2.短信验证登录   OK
+
+3.新增 组织 代码 查看   no  
+
+4.新增职能管理员,    OK
+初始密码设置问题    888888     OK
+新增平台管理员, 设置bcode为0000  OK
+
+5.APP账号密码登录, 短信登录  测试OK  
+	
+6.后台没有分配权限的用户, 看到之前最后一个页面, 问李欢解决问题
+ 
+新增组织问题: 设置默认的path
+
+7.广告任务,编译失败  晨阳解决  OK
+
+17503091010
+
+
+20171208
+
+1.注册一个账号, 测试流程
+新增用户模块  校验手机号码接口和接口文档
+APP用户, 后台用户
+重置密码  ok 
+
+账号密码登录  ok  
+
+短信登录  ok 
+
+忘记密码  OK  
+
+2.测试产生的问题,
+
+新增 组织 代码 查看
+
+新增用户的接口,没有校验主数据是否存在  存在就不让新增用户
+
+
+3.删除平台管理 下的组织  秋罗
+
+4.秋罗,没有分配权限的用户, 可以登录, 登录后刷新页面, 不显示任何数据,包括组织树
+
+5.新增组织代码查看,修改
+
+6.后台没有分配权限的用户, 看到之前最后一个页面, 问李欢解决问题
+
+7.发送了两个请求  秋罗  并发
+
+8.删除用户功能, 恢复 秋罗   
+
+9.新增职能管理员,
+初始密码设置问题
+新增平台管理员, 设置bcode为0000
+
+
+10.组织树问题, 看不到下面的组织树   
+
+
+下午任务::
+
+接口文档, 组织新增, 职能管理人员新增, 代码修改
+
+
+
+20171207
+1.新增用户模块  校验手机号码接口和接口文档  OK
+
+2.http://mdmuat.einwin.com/mdm/accessToken?password=888888&username=15811810854
+not active ??   OK 使用另外一个域名http://gwuat.einwin.com:18765 
+
+3.短信登录, 获取token  待测试  OK  
+http://gwuat.einwin.com:18765/accessToken?captcha=888888&username=15811810854
+
+4.忘记密码   ok   
+
+5.  1注册 2登陆 3找回密码…
+
+获取token的使用
+http://gwuat.einwin.com:18765/accessToken
+
+其他接口使用
+http://mdmuat.einwin.com/mdm/
+
+
+  
+
+
+
+
+
+
+
+
+
+写辞职信
+
+尊敬的领导：
+ 　　您好，本人由于以下原因，无法继续为筷云股份有限公司服务，现特提出离职，望公司领导予以批准。同时感谢贵公司一直以来对本人的帮助. 　　谢谢! 　
+
+	8月2号来到筷云股份有限公司上班, 到现在已经四个月出头了, 负责长城项目的部分模块开发,和客户技术部门的讨论,U房项目的部署, 与同事相处融洽, 工作还是挺顺利, 而且愉快. 
+	离职原因如下:
+	1. 公司并未能按时发放当月的工资,合同规定每月的20号发工资,公司在9月和10月均拖延了7天,11月则更加离谱,拖延至今仍未发;
+	2. 10月1,2,3号加班工资并未核算到10月的工资单中,与之前的庞亮承诺并不一致,庞亮于2017年9月30日的承诺如下:国庆加班的同事,工资会给予加倍, 但是具体没有说明加班多少. 当时其他同事都没说话, 也没人问清楚具体的细节.上周五(12月1号)本人就国庆加班的事情询问庞亮,他的回复是:"后期(没具体说明时间)会以奖金的形式发放,放心吧,不会亏待你们的!" 本人曾质疑他与之前的说法不一致,他并未给出正面回复;
+	3. 试用期是2017年8月2号-2017年11月1号, 但是转正劳动合同签署的时间是2017年11月14号-2018年11月13号,本人也就这个问题向公司提出抗议, 公司并未作出妥善的解决.
+	以上阐述均为属实!
+
+	希望在下周五前完成工作的交接, 能提前最好!
+
+
+　　
+					申请人：钟炜坤 　　时间：2017年12月07日
+
+
+
+杭州, 宁波, 
+
+看代码,JDK1.8
+1.static  {    ...   }  初始化
+
+hashMap  
+
+
+
+
+20171206
+1.短信验证码登录, 获取token接口测试,
+
+2.删除的逻辑 按照原来的逻辑 OK
+
+3.组织bcode问题  处理
+
+4.待客户处理问题
+
+1.获取短信验证码问题,
+2.手机验证码登录 	
+3.忘记密码, 使用短信验证码, 设置新密码
+
+
+
+
+20171205
+1.APP用户登录接口 , 后台登录接口
+
+2.接口文档问题,
+
+  3.7.1.16【API】用户修改密码接口  请求post
+
+  问题：接口文档登录接口地址？
+
+  用户修改密码地址：/user/UpdatePassword/{id} ?  路径待定
+
+  忘记密码：验证码Id	captchaId 
+
+3.发送手机验证码
+http://mdm.einwin.com/mdm/captchal/SendCaptchaSMS
+{
+  "callSource": 0,
+  "phoneNum": "15994733653"
+}
+
+{
+  "result": "true",
+  "data": {
+    "captchaId": "ec5de480-2569-4dda-bad5-b40a8fffe194"
+  },
+  "resCode": 200,
+  "resMsg": "操作成功"
+}
+	
+
+4.重置密  resetPassword  新密码会发送到手机上, 
+
+5.通过手机验证码, 登录!
+
+6.修改密码 旧密码和新密码不用加密,保存到主数据时,自动md5加密
+
+
+
+
+
+
+
+
+1.面试简历,两天开始整理,  
+ 
+还是先停下来,想想未来的事情,到底要如何选择公司.
+每当要做出选择的时候,需要舍弃原来的一部分,然后投入新的学习,新的适应,这个过程是痛苦的,不可预料的,我有过几次这样的经历
+目前还不适合转行,一没积蓄,二是心境浮躁,就凭这两点足以. 继续找工作,投入新的公司,重新开始按照原来的计划,先干java3年,三年内找机会做别的事情,活下去就好
+
+
+
+
+
+2.手机照片  上传到百度空间
+
+3.公交卡充值,现金
+
+ String response = UserClientUtil.SendCaptchaSMS(tel);
+
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        Map<String, String> invokeAccessTokenResult = null;
+        try {
+            invokeAccessTokenResult = objectMapper.readValue(response, Map.class);
+        } catch (IOException e) {
+            logger.error(e.getMessage(), e);
+        }
+
+
+
+
+
+20171204
+
+调整新增用户接口的逻辑
+
+1.新增用户
+APP用户, 后台用户
+
+先判断主数据, 分情况处理
+
+2.,删除用户 
+APP用户, 后台用户
+
+不删除主数据,   U房数据库删除,   bcode,  标签 0
+
+
+3.修改密码
+
+修改主数据的密码,不是U房的密码
+
+4.APP登录 接口调用     登录,注册,修改密码问题
+
+5.修改展位数据  OK
+
+秋罗 后台广告新增界面, 省市区, 多选城市id , 项目公司id  
+
+6.协助 安卓联调 广告接口  OK
+
+7.修改主数据用户信息  
+
+
+
+(CollectionUtils.isEmpty(handleMap)
+
+
+
+
+路径, 请求头参数,入参,返回对象 
+
+
+
+
+
+
+
+1.上午回公司开会,反应情况,确定需求
+
+2.中午回长城,下午就项目登录,注册,修改密码问题,和长城负责人讨论细节问题
+
+3.组织删除失败问题!  path 参数问题  
+
+4.下午确认了新增用户,删除用户,修改密码需求  OK
+
+
+20171130
+1.房源委托评论,户型,房源类型:出租/出售  新增的情况,物业人/经纪人
+
+2.用户新增/删除逻辑  关于权限分配和移除  后期开发人
+
+3.广告和展位  广告新增字段  省市区 bcode  后期开发人
+
+4.用户注册,登录,修改密码  都需要调用主数据的接口,本地数据库不需要保存密码
+
+5.删除用户职能管理人员, 将用户的bcode设置为 "delete" 
+
+删除APP用户,将用户的bcode设置为 "delete" ,proFlag设置为"0"
+
+
+
+
+
+
+2.用户新增/删除逻辑  关于权限分配和移除  确定负责人 后期开发人
+
+权限分配和移除 : 职位和相关权限的挂钩
+
+已经删除的用户(移除所有权限,登录提示没有分配权限),根据点击职能,进行新增(分配新的角色权限)
+
+
+
+
+3.广告和展位  广告新增字段  省市区 bcode  确定负责人 后期开发人
+
+
+
+1.用户管理修改密码之后没有是否与一应云的账户密码打通
+（客户反馈，在一应U房重置密码后，该密码无法在一应生活进行登录），
+确认一应生活是否与主数据打通，再确认与一应云公用的其他应用
+
+2.用户删除，是删除该用户的所有权限，不是删除用户账号；
+
+3.不能删除组织，要与客户确认原因
+
+
+
+
+
+与客户谈判,需要及时调整自己的位置,至少处于相等的位置
+
+20171129
+
+1.如果是0000或者00000001开头的用户, 说明是平台管理员, 点击后直接发送组织树的bcode;
+
+
+2.假设用户的bcode是"000000020001000500010002"
+
+用户的bcode和组织树的bcode进行比较, 
+
+test   "00000002000100050001"
+
+湖南   "000000020001000500010002"
+
+相同的时候就发送请求
+
+3.公司组织树接口修改,测试,联调,测试完成后, 再部署到uat
+
+4.回公司开会,讨论长城项目演示后的问题解决方案和解决时间.
+
+
+20171128
+1.操作日志，可以看到其他人的操作日志 未设置bcode 
+
+2.参数设置，可以设置其中的房源配置接口的设置 
+
+先判断登录用户的职位, 是否为平台管理员, 是的话才可以显示 设置其中的房源配置接口
+其他身份的登录用户不能设置其中的房源配置
+
+3.接口定义, 根据用户的bcode, 取出公司组织树
+
+isMCompany  
+
+
+000000020001000500010002
+00000002000100050001
+0000000200010005
+000000020001
+00000002
+0000
+
+20171127
+1.记得重新部署
+
+2.平台收益 总现金为空  OK
+
+3.经纪人 平均分  OK
+
+关于bcode问题：
+1.房源验房记录还是可以看到其他公司的数据   OK
+
+2.房源委托、客源委托还是客源看到其他公司的数据  OK 
+
+3.组织管理，还可以看到其他公司的组织  后台已经做了筛选 OK
+
+4.用户管理，还是可以看到其他公司的用户数据    后台已经做了筛选 OK
+
+5.费用管理（费用统计、费用流水），还是可以看到其他公司的财务数据  后台已经做了筛选 OK
+
+6.评价管理（委托评价、验房评价、入园评价），还可以看到其他公司的评价数据    前端问题, 已经修改  OK
+
+7.数据报表，可以查看其他公司的数据报表情况 后台已经做了筛选 OK
+
+8.操作日志，可以看到其他人的操作日志   未设置bcode   
+
+9.参数设置，可以设置其中的房源配置接口的设置
+
+先判断登录用户的职位, 是否为平台管理员, 是的话才可以显示  设置其中的房源配置接口
+其他身份的登录用户不能设置其中的房源配置
+
+
+20171124
+1.common 学校,商圈,地铁..非空设置   ok 
+
+客源委托 委托时间问题    OK
+
+2.重新部署秋罗的新包   OK   
+
+3.打包  ,  部署uat  OK
+
+4.创建用户, 创建时间有误,  OK
+
+5.房源委托评价, 户型为空   OK
+
+6.平台收益 总现金为空 原因, 后台接口调用错误, 改正即可
+
+7.经纪人 平均分
+
+
+
+20171123
+1.测试物业管家新增出售房源委托,出租房源委托, 经纪人发布房源后, 出租房跑到出售的列表中
+
+1.底色问题    秋罗
+
+2.小区导入楼盘字典
+
+3.房源管理-禁用之后不能启用问题
+
+4.房源管理-下架之后不能再上架问题
+
+5.房源委托没有数据的问题（app上进行房源委托 后台没有显示数据）
+
+6.组织权限bcode问题     OK
+
+7.委托评价部分数据没有显示问题  已经修改代码  OK
+
+8.业务管理-房源验房记录没有数据（app进行了验房提交，后台没有数据）
+
+9.部署新版本  web和provider
+
+
+
+
+20171122
+1.修改评价的bug   先设置双方的名称和头像
+
+2.APP新增房源委托, 后台没数据?  
+
+3.验真评价新增, 设置bcode        OK    
+
+4.pc后台列表数据, 设置筛选条件,筛选bcode
+
+  客源,评价,举报
+
+5.新增充值记录 ,设置bcode
+
+6.设置bcode  
+
+cms 广告表  展位表     ok 
+
+finance充值记录表   
+
+visit_description  bcode 和agent_account
+
+visit_description_statistics 
+
+agent_ext
+
+member_account经纪人/物业人员账号信息
+
+pro_people_ext物业人员扩展信息表
+
+
+
+
+有问题 委托房源表 新增 bcode 0000  
+
+house_like  时有时无 ,大部分数据没有设置bcode
+7.
+
+
+
+
+
+新增用户时候, 设置该公司的bcode
+
+使用用户新增数据时,设置该用户的bcode,
+
+查询数据时, 使用公司的bcode.
+
+
+
+
+
+
+
+20171121
+1.测试主流程,准备向客户演示
+流程如下:
+
+0.在长城物业总公司下新增一个职能管理人员（授权成为长城物业总公司的管理员-授权中心和一应U房）
+1.这个职能管理人员视为一应U房超级管理员，登录后台该帐号
+1.新增组织（在深圳分公司下新增一个项目公司管理处）
+2.新增用户（在新增的项目公司上新增一个自有经纪人、物业管家、门岗人员）
+3.新增小区
+4.登录前台经纪人-会员购买-充值
+5.发布房源，提交验房申请
+6.登录物业管家，进行验房
+7.经纪人申请预约入园
+8.门岗人员扫码通过
+9.登录物业管家，进行房源委托、客源委托
+10.登录经纪人，进行房源委托发布，客源委托新增
+
+2.修改bug 门岗人员 我收到的评价,
+
+
+物业账号  zzz贤宗
+ 15811810854 888888
+
+经纪人 龚经济2
+ 13430674044 
+
+门岗人  王报宝
+ 13566666668
+
+
+
+
+
+
+20171120
+1.客源共享  面积
+
+2.后台获取登录token,调用会用充值,生成一个参数,掉用微信支付的接口进行测试
+
+3.设置后台新增经纪人用户, 设置默认余额为0.
+
+
+http://gwuat.einwin.com:18765/api/ening-house-business/uhouse/business/getHigherLevelBusiList
+
+{id: "82"}
+id
+:
+"82"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20171117
+1.测试项目, 提出bug
+
+2.修改禅道bug  
+
+3.部署新的版本, 183和uat
+
+4.下午2点给客户演示APP
+
+5.
+
+
+
+    @RequestMapping(value="/house/carrier/rentHouse/busiData",method= RequestMethod.POST)
+
+    @RequestMapping(value = "/business/businessRanking/getRanking",method = RequestMethod.POST)
+
+
+
+/tmp/20171117-110827-62cf    1
+
+/tmp/20171117-104902-867b  包
+
+
+
+
+1.周志勇使用我的电脑
+
+2.晚上回去跑步,练习吉他,
+
+感觉我的圈子还是那样,不大不小,性格决定了吧,不必厌恶,因为这就是我的性格,只有接受自己的性格,并且喜欢自己,不管别人什么想,我都按照自己的性格来
+
+到底要做什么呢...做一些很酷的事情,吉他,攀爬车...还是找机会挣钱吧, 开开心心就好
+
+我们是有很多不同之处,但我觉得我们激发了彼此最好的一面,就好比你是巧克力, 我是...花生酱
+
+
+
+
+
+	
+
+20171116
+
+1.技术文档的事
+
+1.修改bug 
+
+1.修改禅道bug  
+
+2.部署新的版本, 183和uat
+
+3.测试新版本基本流程, bug,调试接口
+
+
+20171115
+
+1. 修改禅道bug 
+
+2. CS
+
+3.审查接口文档,查看接口代码
+	
+4.-我的客源-筛选价格  ok 
+
+5.我的客源共享-求购/求租  ok 
+
+6.部署项目,更新版本
+
+
+
+
+
+1.wps  设置关闭热点推送   再次 
+
+2. 快递代收大楼  ,   类似停车场功能 
+
+3.项目架构搭建
+
+4.跑步,劳动合同
+
+
+优点
+收件人自己取快递, 大量快递员失业
+
+业务流程
+大楼直接与所有快递公司合作, 卸下快递,存放快递, 收件人取快递
+效率高,适合小件/少量, 工作交给机器人
+
+取件人可以使用空闲时间取出快递, 一次本人的取出所有快递
+
+适合慢件,
+
+快递费用 大幅度减少  这是关键(做到这点即可),最终减少商品价格
+
+
+缺点
+固定一个地点,无法送货上门,用户体验不佳.
+
+不适合紧急快件!!
+
+
+
+
+
+
+新技术 是为了解放人的双手
+
+解决员工未来的工作问题
+
+
+
+
+20171114
+1. 经纪人 我收到的评论
+物业人员/门岗人员 我收到的评价
+
+2.再次提交验房, 无法评价,修改查询最新验房记录
+
+3.客源共享接口 数量统计 
+
+4.find in path  快捷键使用
+
+5.修改禅道bug  
+
+6.部署新的版本, 183和uat
+
+7.测试新版本基本流程, bug,调试接口
+
+
+20171113
+1.消息模板  : 您提交的“${houseTitle}”房源验房申请已经处理啦！马上点击查看吧
+修改uat数据库  OK
+183和uat后台修改  OK
+
+2.发布客源委托-新增客源 先校验验证码
+
+3.新增该房源带看记录，查看房源动态近7日带看统计  
+
+4.
+1.房源详情的带看次数与带看列表次数不一致
+2.带看列表的点赞功能不能使用
+
+
+5. UAT物业管家首页-出租房-出租房详情  已入园但无填写带看反馈时无增加记录
+
+6.pc后台组织增删改        OK 
+
+7.会员购买记录账单流水号  生成失败   找到原因  OK
+
+8.客源委托  校验手机验证码 及接口文档  OK
+
+9.流水号问题, 解决  OK
+
+10.对物业人员,和门岗人员评价 相同  OK 
+经纪人我的评价
+
+
+
+
+
+提交代码, 接口文档更新
+	
+
+1.重新签劳动协议
+
+2.买副拳击手套
+
+3.公积金
+
+
+
+20171111
+1.修改自动评价时间为每天凌晨1点   OK
+
+2.查看自动计算人员评分代码报错!  未果
+
+3.扫码入园  设置入园人员账号,名称  OK
+
+4.UAT门岗人员首页-发布客源委托-查看经纪人-查看经纪人评价   OK
+
+5.禅道的bug    修改
+
+6.客源共享列表   OK
+
+
+
+
+拳头套, 运动衣服
+
+
+
+20171110
+1.首页, 客源共享的接口 修复BUG  ok 
+
+2.解决查看APP当前用户详情的bug   OK
+
+3.禅道的bug
+
+4.APP  uat  我的评价  数据库表修改
+
+
+
+
+
+
+
+
+20171109
+1.首页, 客源共享的接口 修复BUG
+
+2.uat  APP登录失败     OK
+
+3.后台登录, 点击功能不能显示页面   
+
+4.讨论需求: app启动广告 ,设计及开发时间, 联调时间,后期维护
+
+5.重新部署web版本  OK 
+
+6.我的   界面报错  ok  后台代码并没有问题    OK
+
+7.uat数据库 修改验真记录表 图片路径字段大小改为2048  OK
+
+8.修改uat数据库  添加表的字段,修改  OK
+
+新增客  源,客源记录的省市区是客源的,但是客源共享的列表筛选的是经纪人   OK
+
+ select id coustomerId, agent_id agentId, creation_date creationDate, will_area willArea, pre_price_begin prePriceBegin, pre_price_end prePriceEnd, pre_proportion_begin preProportionBegin, pre_proportion_end preProportionEnd, customer_style customerStyle from customer where enabled_flag=1 and state=1 and is_share =? and customer_style = ? and ( 1=1 ) and ( 1=1 ) order by creationDate desc limit 0,10 
+
+
+2017-11-09 16:52:20.649 DEBUG 3008 --- [ XNIO-2 task-13] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2017-11-09 16:52:20.649 DEBUG 3008 --- [ XNIO-2 task-13] org.mybatis.spring.SqlSessionUtils       : Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f70f368]
+2017-11-09 16:52:20.650 DEBUG 3008 --- [ XNIO-2 task-13] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@415890018 wrapping com.mysql.jdbc.JDBC4Connection@7a6c128b] will be managed by Spring
+2017-11-09 16:52:20.651 DEBUG 3008 --- [ XNIO-2 task-13] c.e.u.c.p.mapper.CustomerMapper.count    : ==>  Preparing: SELECT count(*) FROM customer WHERE 1=1 AND enabled_flag=1 AND customer_style = ? AND ( 1=1 ) order by creation_date desc 
+2017-11-09 16:52:20.651 DEBUG 3008 --- [ XNIO-2 task-13] c.e.u.c.p.mapper.CustomerMapper.count    : ==> Parameters: 1(String)
+2017-11-09 16:52:20.652 DEBUG 3008 --- [ XNIO-2 task-13] c.e.u.c.p.mapper.CustomerMapper.count    : <==      Total: 1
+2017-11-09 16:52:20.652 DEBUG 3008 --- [ XNIO-2 task-13] org.mybatis.spring.SqlSessionUtils       : Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f70f368]
+2017-11-09 16:52:20.652 DEBUG 3008 --- [ XNIO-2 task-13] org.mybatis.spring.SqlSessionUtils       : Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f70f368]
+2017-11-09 16:52:20.653 DEBUG 3008 --- [ XNIO-2 task-13] org.mybatis.spring.SqlSessionUtils       : Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f70f368]
+2017-11-09 16:52:20.653 DEBUG 3008 --- [ XNIO-2 task-13] org.mybatis.spring.SqlSessionUtils       : Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f70f368]
+2017-11-09 16:52:20.653 DEBUG 3008 --- [ XNIO-2 task-13] o.s.j.d.DataSourceTransactionManager     : Initiating transaction commit
+2017-11-09 16:52:20.653 DEBUG 3008 --- [ XNIO-2 task-13] o.s.j.d.DataSourceTransactionManager     : Committing JDBC transaction on Connection [HikariProxyConnection@415890018 wrapping com.mysql.jdbc.JDBC4Connection@7a6c128b]
+2017-11-09 16:52:20.656 DEBUG 3008 --- [ XNIO-2 task-13] o.s.j.d.DataSourceTransactionManager     : Releasing JDBC Connection [HikariProxyConnection@415890018 wrapping com.mysql.jdbc.JDBC4Connection@7a6c128b] after transaction
+2017-11-09 16:52:20.656 DEBUG 3008 --- [ XNIO-2 task-13] o.s.jdbc.datasource.DataSourceUtils      : Returning JDBC Connection to DataSource
+2017-11-09 16:52:20.656 DEBUG 3008 --- [ XNIO-2 task-13] c.m.json.JsonViewReturnValueHandler      : No JsonView found for thread, using returned value
+2017-11-09 16:52:20.657 DEBUG 3008 --- [ XNIO-2 task-13] c.m.json.JsonViewResponseProcessor       : Written [com.einwin.uhouse.customer.api.bo.CustomerCount@1b3e08b1] as "application/json" using [com.monitorjbl.json.MyJsonViewMessageConverter@5f6feda9]
+
+1.
+springClould application.yml  logging
+
+logging:
+  file: ${spring.application.name}
+  level:
+    ROOT: DEBUG
+    org.springframework: DEBUG
+    org.springframework.web.servlet.view: DEBUG
+    org.springframework.web.servlet.mvc: DEBUG
+    io.undertow.request: ERROR
+    com.einwin: DEBUG
+    com.einwin.framework.mybatis: DEBUG
+    com.netflix.hystrix: DEBUG
+    com.netflix.ribbon: DEBUG
+    feign: DEBUG
+    feign.hystrix: DEBUG
+    org.springframework.cloud.netflix.hystrix: DEBUG
+    org.springframework.cloud.netflix.feign: DEBUG
+    org.springframework.cloud.netflix.ribbon: DEBUG
+    org.springframework.cloud.netflix.zuul: DEBUG
+    com.netflix.discovery: DEBUG
+
+
+uat   7
+测试  8
+
+uat   7/tmp/20171109-112631-0d31
+uat 8 /tmp/20171109-111650-25e1
+
+改好bug 再部署版本
+
+
+20171108
+1.移动端 图片上传问题解决 OK
+
+2.和客户沟通主数据操作失败问题,待确定
+
+3.部署项目到测试环境, 部署项目到uat 环境
+
+4.部署web到测试环境
+
+5.广告表 alter table ad_data add stand_type int(11) DEFAULT NULL COMMENT '展位'; 
+
+6.部署web到测试环境, uat环境
+
+7.商圈设置必填控制   
+
+8.问题:1.轮播图没有显示  OK；2.我的房源列表没有数据  OK；3.客源共享列表没有数据；4.会员购买点击无效
+
+ String corpCode = StringUtil.trim(organazationRequest.getCorpCode()); //企业代码，必填
+java.lang.IllegalArgumentException: Parameter OrganazationRequest.corpCode is null
+	at com.einwin.mdm.util.OrganazationClientUtil.insert(OrganazationClientUtil.java:180)
+	at com.einwin.uhouse.business.provider.controller.BusinessController.add(BusinessController.java:286)
+
+2017-11-08 18:10:42.853  INFO [ening-house-business,aa279aa771acda46,aa279aa771acda46,false] 12804 --- [XNIO-2 task-3] com.einwin.mdm.util.MdmHttpUtil          : request for http://mdmuat.einwin.com/mdm/organazation/batchUpdateOrgStatus response data: {"result":"false","resCode":201,"data":{},"resMsg":"无该组织机构"}
+
+
+
+
+
+TXT小说的APP 
+
+零食
+
+
+
+
+
+
+
+
+20171107
+1.修改配置文件, uat:common.yml
+省市区数据获取到 
+
+2.下午开会,参加会议的人员:长城的两位项目经理李和林,APP组长王,蒋总,赵晨阳,钟炜坤, 
+介绍pc后台功能, APP功能展示,九个数据库表的设计,后端代码结构
+
+3.讨论并找出问题, APP图片上传失败,pc后台主数据操作失败
+
+20171106
+1.APP经纪人: 入园申请记录列表 / 带看反馈列表  做分页   OK
+
+2.本地postMan测试失败  OK
+
+3.部署项目183  web     OK
+
+4.uat 登录接口报错    
+
+5.uat 省市区数据  下午15点重新启动 , 还是没数据   
+
+6.部署项目uat和测试  OK
+
+
+20171103
+1.部署项目到UAT 环境, 部署过程
+
+2.yml文件保存两份 true和false
+
+解压秋罗的web文件
+sudo unzip /tmp/20171103-170828-49e5/euh\(1\).zip  -d  /usr/local/nginx/html/euh
+
+
+
+20171102
+1.优先排序待入园、第二排序待评价、待填写带看反馈；第三排序待填写带看反馈；第四排序待评价；第五排序是已评价、已填写带看反馈
+
+2.消息推送:客源委托后保存消息   测试OK
+
+3.入园申请, 根据房源设置bcode 测试OK
+
+
+
+20171101
+bug 经纪人我的评价:  物业人 / 门岗人  有重复的区域:房源委托评价/客源委托评价
+
+1.测试后台接口, 接口文档修改
+
+2.学习SpringBoot和SpringCloud
+
+3.中午开会, 交流当前长城项目状况,
+
+4.后台，财务管理，平台收益。bug 修复
+
+邮件
+
+中午开完会, 才了解到贤宗要离职, 他是这个项目开发到现在第二个离职的同事,对此表示挺惊讶的,以往的工作中,在项目的过程中离职的情况是很不应该的,从员工和公司的角度都会是个不好的结果.
+
+贤宗的这两周的都在弄uat项目部署,短时间很难交接工作,他也是一点一点在摸索,确实他也承受着很大的压力,关于部署的事情,自从组长离开后就落到他的身上.
+
+本人之前的工作中并没有涉及到项目部署的工作内容, 也很少使用相关的软件,没有相关的工作经验,个人认为交接贤总的工作对整体项目拖延风险比较大， 同时客户也会质疑公司在人资资源协调的能力和技术上的能力，
+
+公司会做出一个合理的安排, 如果继续让我接受贤宗的工作的话,这并不是一个合适选择,并不是不想, 确实是经验不足,无法在短时间内按照公司的期望完成这个任务,无疑贤宗是目前最合适的人选,在他的基础上再一次慢慢摸索，对整体项目的部署进度会有所影响；为了客户能在短时间内得到最好的项目结果，同时公司能够在短时间内最快的收到其余的款项，希望庞总在整体项目中优先考虑人力资源协调的问题，相信公司能够做出合理合适的安排。
+以上，感谢庞总对我的认可和肯定，我相信在庞总的不断带领下，自己也能够不断提升和强化自身技能！
+
+
+
+
+
+
+
+
+
+1.樱花牌油网  买纱网, 自己剪
+
+2.20171101办卡, 健身1680/20=84次 , 每月8次-12次==每周两次-三次.
+
+3.感悟:别看一个人活得那么潇洒,不知道他身后的故事,就不要羡慕他,起码你得先读过他的过去,才能理解他的现在
+这几天看一个女孩, 大概是80后,职业跳伞, 哇, 好羡慕呀,于是我也立志成为跳伞的男人,考托福,考跳伞证,路线看似已经定下来了.但是...
+
+今天上午又看见这个女孩的资料:
+
+于斯人国际跳伞学校 · 打杂
+VTech北美总部 · 市场营销主管
+美国跳伞国家队 · 成员
+美国花旗银行 · AMLS反洗钱师
+美国佐治亚州政府 · 州长中国事务助理
+
+无意中打开的详细资料...瞬间明白了一个道理:如果你想要做一些很酷的事情,就得先有一个或多个经济来源.
+
+现在的我需要做的是  丰富我的背景资料
+
+简单说就是:先挣背景,背景,再者钱,最后才是玩跳伞
+
+4.回家剪毛线,今天老妈在家, 晚上回去陪她拖地
+
+5.吉他练习,CDFE, F练习竖琴练习10-20min
+
+6.如果对方在忙, 我就静静坐着, 做自己的事!!!
+
+7.公司给我一个任务, 不用慌张, 尝试去解决,尝试...,心态要好, 解决不了不必过于自责
+要知道问题在哪里,知道后就去找解决的方案!!!
+
+老板给你一个不可能完成的任务，逼你去完成已经很不道德，还逼你说能不能完成，实际就是给你压迫感，让你知道知难而退。
+
+可以和他好好沟通一下，同时做好两手准备。
+
+20171031
+1.客源委托列表, 返回物业人的职业,物业人/门岗人   	APP接口
+
+2.测试:  经纪人 我的评论列表 : 门岗人员
+
+3.房源验真评价  测试通过  OK
+
+4.网速出了问题 , 正在处理  ok 
+
+5.我的评论列表使用统一接口  测试
+
+
+
+
+
+冷静下来, 不着急, 找点事情,练练吉他,健身,看书,  克制自己~!!!
+
+
+20171030
+1.房源列表联表查询,checkHouse表, 查询该房源验真记录的isComment字段0:未评价,1:已评价   OK
+
+2.测试新增房源验真评价  OK
+
+3.评价成功之后，【我的评价】列表中没有数据；2.物业管家【房源管理】中完成评价的状态没有改变   OK
+
+4.我收到的评价,龚老板测试,物业管家  OK
+
+5.模糊查询:涉及到的算法:  N元特征算法、动态规划算法、缩写发现算法??
+
+6.经纪人 我的评论列表  接口文档的修改
+
+
+
+1.打印中讯通采购单
+
+2.看看kindle 
+
+3.健身房看看,今晚炼练一个小时,明晚去交钱
+
+4.吉他联系
+
+5.老妈充话费
+
+
+
+
+20171028
+1.APP入园列表 :未入园,已入园  并且按照时间降序  ok 
+2.与安卓调试接口
+
+3.修改接口文档
+
+
+
+20171027
+1.getCommetToPro  和  houseReportList  没数据  OK
+
+2.我收到的评价没有经纪人id和小区id   OK
+
+3.xml文件中,多个不同名字数据库的字段可以对应一个同一个对象的属性, 反之也行
+
+4.验真评价: 楼栋单元房号  OK
+
+5.物业管家 : 客源委托管理,评价后委托状态应该改变为已评价  OK
+
+6.long类型的属性, 在xml文件中  if条件进行null的判断即可,不用判断''
+
+7.解决bug
+
+门岗人员首页-发布客源委托-新增-是否联系本人  OK
+
+意见反馈-评价管理-验房评价-输入关键字-房源编号  OK
+
+意见反馈-评价管理-入园评价-输入【关键字】-门岗人员	OK
+
+
+
+
+
+20171026
+1.房源验真评价    OK
+
+验真记录isCommet 状态已修改
+
+2.数据库某个字段, 无需修改,只是作为标识的, 对象无需添加该属性,就不会有值,那样数据库在新增的数据的时候就不会产生null
+
+3.新增评价,整理一遍 房源委托,客源委托,   no
+
+新增客源委托评价
+有记录修改, 没有就新增, 找出客源委托记录, 设置客源委托信息和当前用户信息
+
+根据用户mid获取用户,判断是经纪人/非经纪人, 设置对应的信息
+
+4.物业人  我收到的评价: 返回经纪人id和小区id
+
+
+
+20171025
+1.查看带看反馈接口 代码编写, 测试, 调试, 接口文档  OK
+
+2.物业人 我收到的评价,先判断身份,物业人员/门岗人员/经纪人  OK  
+
+物业人员 房源+客源+验真
+
+门岗人员 房源+客源+入园
+
+3.房源委托  委托人评价时间,经纪人评价时间  筛选报错
+
+4.房源验真评价  
+
+房源验真表  新增是否已评价字段  OK  
+
+
+
+
+20171024
+1.列表  举报类型 未实现   
+客源举报
+
+经纪人id    userId   ok  
+物业人id    proId    ok 
+
+房源举报
+
+经纪人id    agentId   
+物业人id    proId
+
+2.举报的回复内容字段    ok 
+
+逐个字段需要填写    
+
+3.客源委托新增客源, 状态没改变isCreate 应该改成1      OK
+  
+4.入园申请,设置扣款时间   ok 
+
+5.门岗人员 
+
+我的评价  房源委托,客源委托
+
+我收到的评价 房源委托,客源委托 入园申请评价
+
+物业人
+
+ 我的评价,房源委托,客源委托
+
+
+ 我收到的评价: 房源委托,客源委托 房源验真评价
+
+6.客源共享举报, 新增,物业人回复 ,列表   ok 
+
+
+
+
+20171023
+1.添加  是否投诉    is_complaint  OK
+
+2.入园申请记录列表  添加房源编号, 价格, 户型层数装修   OK
+
+3.房源举报新增  是否新增, isReply 默认0  OK
+客源共享举报                             OK
+
+4.bcId  int改为String类型  入园申请     ok 
+
+5.入园评价  bcId  int改为String类型   OK
+
+6.举报列表, 根据mid 筛选    OK    
+
+7.房源委托评价后台筛选  委托时间?   后台入参出错   OK
+
+
+1.摇号
+
+2.回去刮胡子,回家拿袋子, 过去Q房拿钥匙,搬桌子
+
+3.健身,练练手臂,大腿     静静下心来, 早点休息
+
+4.
+
+
+
+
+20171022
+1.整理房间, 清洗帐篷,拖地, 磨刀
+
+20171021
+1.
+
+20171019
+1.省市区 根据名称筛选,   并测试   NO
+
+
+2.评论对象是设置, 然后测试        OK
+房源委托评价, 客源委托评价, 入园评价
+
+客源委托评价测试通过  OK
+
+房源委托评价    OK
+
+入园评价     OK
+
+
+3.客源委托  物业人电话    OK
+
+4.入园评价
+  `pro_comment_time` datetime DEFAULT NULL COMMENT '经纪人评价时间',    OK
+   物业人头像         OK
+新增的时候 ,判断是否已经评价    OK
+
+5.客源委托评价 
+省名,                             OK
+商圈名称regin  bcid bcname    无  OK
+经纪人头像, 物业人头像           OK
+
+6.房源委托评价   
+bcId   无
+bcName      无
+物业人头像     OK
+`house_type` varchar(1) DEFAULT NULL COMMENT '户型(来自数据字典)',    OK
+
+7.客源委托不能重复新增客源  OK
+
+8.跟进记录 修改  bug修复  OK
+
+9.获取一个客源 ,跟进记录为null  OK
+
+10.客源   分页  时间参数有问题
+
+11.修改客源, 新增一条跟进记录,        OK	
+
+12.填写带看记录后, 状态改变为  查看带看记录     OK
+
+13.后台入园列表  筛选    OK  
+
+14.填写完带看反馈保存之后, 列表不显示
+
+15.新增入园 获取房源id
+
+16.带看反馈: 查看带看反馈, 
+http://uhouse.einwin.com:10016/uhouse/app/house/detail/feedback/list
+
+{
+	"id":77,
+	"houseStyle":"2",
+	"order":"1",
+	"mid":101	
+}
+
+
+
+
+
+
+20171018
+1.修改客源新增, 客源委托新增, 入园申请新增, 接口
+
+2.(完成)客源委托详情  APP
+
+3.idea 问题,更新代码, 提交  
+
+4.APP  启动失败
+问题已经解决
+
+
+
+20171017
+1.新增客源委托, 评价, 测试
+
+
+20171016
+1.新增评论,修改状态   经纪人,物业人    OK
+
+2.新增入园申请, 测试通过183   OK
+
+3.客源举报接口文档  OK
+
+
+ SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:dd");
+            Calendar cl = Calendar.getInstance();
+            cl.setTime(new Date());
+            cl.add(Calendar.DATE, dealLinTime);
+            String format = sdf.format(cl.getTime());
+            customerEntrust.setEndTime(format);
+
+4.新注册的用户:是否启用, 认证,
+
+新增的操作先判断这个用户的状态  
+
+ 认证`certification_flag` varchar(1) DEFAULT '0' COMMENT '是否已认证（社会经纪人有效）， 0：已认证 1：未认证,2认证未通过',
+
+是否启用 `enable_status` varchar(1) DEFAULT '0' COMMENT '是否可用状态。1：可用,0:不可用',
+
+5.app入园列表  按时间顺序   OK
+
+6.入园申请,房源验真记录 导出Excel 测试通过
+
+
+  @RequestMapping(value = "/uhouse/visitHouseRecord/getExcel")
+    public ResponseData getExcel(VisitHouseRecordBO visitHouseRecordBO,HttpServletResponse response) 
+
+20171015
+1. 客源委托表  
+
+  `entrust_state` char(1) DEFAULT '4' COMMENT '委托状态(4:已完成,5已评价)',
+新增客源委托 已完成
+`is_create` char(1) DEFAULT '0' COMMENT '是否已新增:   0:未新增  1: 已新增',
+经纪人  新增客源时, 修改该状态,
+
+接口文档
+
+2.sessionUser 获取当前用户接口
+
+3.分页  
+
+4.房源验真列表导出  测试
+
+5.房源委托 
+  `is_agent_reply` int(11) DEFAULT 0 COMMENT '经纪人是否已经评论物业人员  0:否  1 是',
+  `is_pro_reply` int(11) DEFAULT 0 COMMENT '物业人员是否已经评论经纪人  0:否  1 是',
+客源委托
+  `is_agent_reply` int(11) DEFAULT 0 COMMENT '经纪人是否已经评论物业人员  0:否  1 是',
+  `is_pro_reply` int(11) DEFAULT 0 COMMENT '物业人员是否已经评论经纪人  0:否  1 是',
+
+<result column="is_pro_reply" jdbcType="INTEGER" property="isProReply"/>
+ <result column="is_agent_reply" jdbcType="INTEGER" property="isAgentReply"/>
+
+6.测试 新增入园申请 
+
+7.测试 新增客源委托,房源委托
+
+20171014周六加班
+1.sessionUser 了解
+
+2.新增客源 ,客源委托 返回id             OK  
+
+3.导出Excel 入参没有按照当前的条件    
+
+4.入园申请 : 入园费用查询  有问题   OK  
+
+5.入园申请评价状态  改变为已评价..  OK 嘉宝解决
+
+6.填写带看反馈, 改状态  前端问题, 已解决  OK
+
+7.填写带看反馈, 后入园记录状态为null        待测试   
+
+8.入园申请    不能取消委托  需求改变,   OK
+
+9.客源共享前, 判断是否禁用状态     
+
+10.入园申请 经纪人扣钱...   memberController update方法  新增     OK
+   
+11.我的客源: 数量放在对象中      OK
+
+12.物业管家  新增客源委托  新增并委托, 一个接口  
+
+13.后台 入园申请记录 总数  
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10, 10' at line 34
+
+14.排序问题
+
+
+20171013
+1.新增入园申请记录, 通过sessionUser获取用户id    待修改    
+
+2.入园申请,资金冻结   新增流水记录
+
+先检查该经纪人 余额是否足够,不够就新增失败:余额不足;不能新增入园记录
+
+足够就要减去用户的余额,新增入园记录,并新增费用流水, 
+
+3.平台收益  :   OK
+
+总收益: 会员购买技术服务费
+
+总金额: 会员购买+充值
+
+4.预约入园接口调试, 新增, 列表,详情 
+
+20171012
+1.预约入园接口调试, 新增, 列表,详情     OK
+
+2.入园申请, 删除图片   OK
+
+3.客源编号, 客源委托编号.  OK
+
+4.新增客源委托:接口调试   OK
+
+5.平台收益  :总收益,  总金额    明天问
+
+
+
+
+1.查询日记,
+
+2.定制计划
+
+3.带衣服  
+
+
+0405  OK
+
+
+APP客源委托列表 :  
+
+判断当前用户的角色: 
+根据角色取出客源委托列表,如物业人员取出委托状态为1,2,3的客源委托单,
+经纪人应取出委托状态为4,5的
+
+警惕他人的夸奖
+20171011
+1.新增接口文档: 经纪人 我收到的评价:房源委托评价,客源委托评价
+
+2.修改并测试房源验真记录导出接口 OK 
+
+3.预约入园接口调试
+
+4.查看其它模块代码 app
+
+
+昨晚去嘉威的婚礼, 婚礼上介绍了两个经历的点点滴滴, 设计得挺温馨,浪漫,由此我也想到我们一起经历的事,虽然我们只认识了10个月,
+
+还看到一个同学,还是像以前一样,或许以前我会觉得他有点奇怪,不像一个正常的男生,还常常戏弄他,昨晚也是,一起上洗手间, 我还是像以前一样戏弄一下,但只是轻轻推了一下他的腰,心想问他有没有女朋友.我们在洗手间门口聊了一下彼此的工作,还是挺高兴,他能继续按他的习惯,状态生活,还做了产品经理,身形也没发生多大的变化,皮肤保养的挺好的,只是比一般男生更注意外表罢了,没有其他不一样的地方.
+原来,尊重一个人是这样的,是站在他的身边,对他的行为不做任何评价,静静地看着,保持微笑 
+
+20171010
+1.查询出15天内未评价的,房源验真评价,入园评价
+
+2.
+
+20171009
+1.测试已经完成的接口:客源,客源委托,房源验真记录导出(有问题),入园记录导出
+
+2.对象get属性时,非空判断的必要性
+
+3.房源验真记录导出, get方法 有问题, 代码是post方法
+
+4.配合进行接口联调。
+
+1.需要学习的,看情况,不必太刻意
+马尼拉文化,地理,历史,建筑,人文,
+机场,交通工具
+保险
+
+2.穿着打扮,尽可能平民化,避免被人盯上,寻求帮助的途径,大使馆...警察
+
+3.买微波炉,粤通卡,瑜伽垫,
+
+4.拳击练习,
+
+5.花费统计,明天下午去图书馆,
+
+6.今晚带书
+20171003
+
+1.定时任务, 找出15天后未评价的列表, 修改评分为5d, 评价时间,更新数据   ...
+
+2.筛选出区域  /common/district/list    .....
+
+3.入园申请, 扣款,    新增费用流水表记录	   ....
+
+4.新增客源问题  400/500  OK
+
+5.收益平台
+
+6.接口调试
+
+iOS 客源新增  OK
+
+安卓 客源新增 OK
+
+7.项目部署视频
+
+回来的路, the way back 苏联,喜马拉雅山
+
+StringUtils.isNotEmpty(xx.getXname().toString())  xx.getXname()为空会报错   OK
+
+20171002
+1.APP 经纪人 新增客源 维护经纪人扩展信息  OK
+
+2.APP 物业人 新增房源委托 维护扩展信息  嘉宝完成  OK
+
+3.APP 物业人 新增客源委托 维护扩展信息  OK
+
+4.标签表 维护评价标签个数
+
+5.APP客源委托列表 :  
+
+判断当前用户的角色: 
+根据角色取出客源委托列表,如物业人员取出委托状态为1,2,3的客源委托单,
+经纪人应取出委托状态为4,5的
+
+6.新增客源,后委托状态修改为已完成  OK
+
+查询出状态为(1234)的记录, 再根据记录id查询出评论, ,却新增评论记录的时间 >=15天的集合,遍历,判断评分是否为空,空则设置评分为五星
+
+入园评价, 获取入园记录列表根据是否评价 ,新增入园评价
+
+房源委托评价, 获取房源委托列表,根据是否已评价:都没评价,判断score是否为空, 空就设置为5,评价时间设置为当前时间
+
+客源委托评价
+
+房源验真通过后, 新增房源验真评价  
+
+通过客源委托新增客源的时候, 顺便新增客源委托评价记录
+
+通过房源委托发布房源的时候, 顺便新增房源委托评价记录
+
+扫码入园完成的时候, 新增入园评价记录
+
+
+
+20171001
+1.修改接口文档 APP新增意见反馈
+
+2.sql报错 , 放在mysql中运行一次 即可发现问题    OK
+
+3.客源委托属性 desc  改为 descr
+
+4.经纪人 接收客源委托,新增客源的时候,带上客源委托id , 
+新增客源的方法需要判断id是否有值, 有就更新客源委托再新增客源,没有就新增客源
+
+5.客源委托列表, 数据过多 包括vo 对象,  待修改  OK 
+
+不使用bo ,使用实体对象封装求购和求租人数  OK
+
+6.讨论物业人扩展信息表和经纪人扩展信息表, 并增加需要的字段
+
+7.定时任务调度的使用
+
+8.新增客源委托成功, 发送消息提醒被委托的经纪人.
+20170930 
+1.msg 返回  ""    OK
+
+2.客源委托 新增  意向和备注  OK
+
+3.sql报错 , 放在mysql中运行一次 即可发现问题    OK
+
+20190929
+1.修改APP新增接口, 通过sessionUser获取当前用户信息    待确定  OK
+
+2.完成时候 需要维护其他信息表的字段    
+
+3.修改 房源带看反馈 返回字段   出租和出售的     OK
+
+APP封装一个对象返回,按照照片, 还详情是查询 带看记录表   OK  待测试  OK  租房bo转对象
+RentHouseBo  继承 
+   RentHouse rentHouse = rentHouseBOResponseData.getData().getRentHouse();
+{
+  "timestamp": 1506684270894,
+  "status": 500,
+  "error": "Internal Server Error",
+  "exception": "java.lang.ClassCastException",
+  "message": "Request processing failed; nested exception is java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to com.einwin.uhouse.house.api.model.RentHouse",
+  "path": "/uhouse/app/visitHouseRecord/getVisit"
+}
+
+
+4.物业管家的客源委托列表管理, 状态  OK
+
+5.新增客源 , 先判断验证码,错误返回失败,正确新增   OK
+  新增客源委托  增加4个字段
+
+price area  修改  正在修改/....                OK
+
+
+客源委托 是否联系本人..字段新增            OK
+
+  `is_contactme` varchar(1) DEFAULT NULL COMMENT '是否联系本人。1：联系，0：不联系',
+  `contact_name` varchar(64) DEFAULT NULL COMMENT '委托时选择不联系本人填写的联系人姓名',
+  `contact_tel` varchar(256) DEFAULT NULL COMMENT '委托时选择不联系本人填写的联系人电话',
+  `contact_sex` varchar(256) DEFAULT NULL COMMENT '委托时选择不联系本人填写的联系人性别,1男，2女',
+
+6.接口文档 客源委托,选择经纪人   OK 
+
+6.消息推送需求 
+
+
+
+查看支付接口,
+
+20170928
+1.app 新增意见反馈接口
+2.app 意见反馈列表 接口
+3.APP 物业管家 我收到的评价 :房源委托评价, 客源委托评价, 验真评价 接口文档完成
+4.物业管家 我的评价 : 房源委托评价, 客源委托评价  接口文档完成
+5.经纪人 我收到的评价 接口文档
+20170927
+
+1.接口文档 物业相关:我对经纪人的评价
+
+2.修改 新增客源委托评论 新增房源委托评论bug  OK...no
+
+3.物业管家 我收到的评价 :房源委托评价, 客源委托评价, 验真评价   OK...no
+
+4.物业管家 我的评价 : 房源委托评价, 客源委托评价   OK...no
+
+5.
+
+20170926
+
+303  OK
+
+1.25号房源委托, 客源委托 新增方法 添加bic, bcode...  OK
+
+2.APP 物业管家 新增客源委托   OK  待测试
+
+3.定好计划, 不要告诉她, 假装毫无计划地旅行, 给她惊喜~
+
+4.房源举报 列表条件:原来是门岗人员名称,现改为举报人名称或账户, 删除原来门岗人员的proId,proName,proAccount三个字段 OK
+
+数据库 sql文件,对象和bo,xml     OK
+
+接口文档 后台列表  agentNameOrAccount    ...OK  待测试  OK
+
+5.房源举报新增, 回复  OK  待测试
+
+6.客源举报新增, 回复  OK  待测试  OK 
+
+
+
+
+
+
+20190925
+
+the game of power  10 OK 
+
+1.xmind  完成进度的修改  OK
+
+2.
+
+3.自己负责的所有新增记录的接口加入bid、bcode、createdBy、creationDate字段。 
+
+自己负责的所有后台查询列表的接口加入bcode的like条件，用于做数据权限（2天）
+
+4.快捷键练习   ...  OK
+Ctrl shift v  查看5个最近复制的内容
+修改快捷键的方法   
+alt w   关闭所有编辑窗口
+恢复alt enter 的代码提示功能
+
+5.
+
+
+代码提交
+
+1.添加对象备注信息
+
+2.APP 物业管家 新增客源委托  待测试
+
+3.app物业人员  相关公共部分* 我的评价 : 房源委托评价, 客源委托评价   待测试  
+
+4.app物业人员  相关公共部分* 我收到的评价 :房源委托评价, 客源委托评价, 验真评价  待测试
+
+5.物业人员对经纪人 新增房源委托评论 传入一个房源委托id* 根据id查询, 有该评论就修改, 没有就新增  待测试
+
+6.物业人员 新增客源委托评价  待测试
+     * 传入一个客源委托id
+     * 根据id查询客源委托评价表 , 有该评论就修改, 没有就新增  
+7.APP 接口 feedbackController 修改
+
+
+
+
+
+
+
+20170923
+1. 09  ok 
+
+2. 平台收益, 平台总现金  ,平台总收益
+
+
+
+20170922
+1.app-经济人，我的举报，房源举报、客源共享举报（1天）  9.22 上午
+
+2.新增评论时,记得设置经纪人和物业人的头像信息
+
+3.自己负责的所有新增记录的接口加入bid、bcode、createdBy、creationDate字段。 
+
+自己负责的所有后台查询列表的接口加入bcode的like条件，用于做数据权限（2天）
+
+4.快捷键练习
+
+
+
+20170921
+
+1.  feedback模块的xml文件检查  1小时     OK
+
+2. 自己负责的所有新增记录的接口加入bid、bcode、createdBy、creationDate字段。 
+
+自己负责的所有后台查询列表的接口加入bcode的like条件，用于做数据权限（2天）
+
+3.APP feedback  接口文档.......
+
+4.客源共享举报 新增名字           OK
+
+5.新增客源, 价格字符串   OK  
+后台列表  价格    OK	
+
+客源列表 客源新增
+客源委托列表, 客源委托新增
+
+6.评论列表 遍历, 找出member 获取头像!  设置回去
+
+7.APP修改客源, customerFollowLog  修改方法  OK
+    
+8.app列表  价格 入参   OK
+
+
+小结:
+client找不到api类, 将api clean ,再重新install 
+
+
+
+20170920
+05 OK
+1.idea快捷键,  15分钟......
+
+2.后台 业务管理 房源验真记录导出  1小时  .....  OK 
+获取数据
+定义数组:[]
+ List<Map<Object, Object>> list = new ArrayList<Map<Object, Object>>();
+ DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+
+3.修改省市区的id为 String , 数据库, 对象,xml文件 ,接口文档   .....  ok 
+
+common:商圈,学校,地铁 数据库      OK  
+
+customer:客源   OK, 客源委托   OK
+
+house:房源委托    OK
+
+feedback:房源委托    OK
+ 
+
+4.任务调度中心 quartz  待
+
+5.意见反馈 接口文档 
+
+6.自动热放微波炉,  做一个任务, 自动加入,加热完成后, 自动取出
+
+7.所有新增数据的请求，麻烦入数都带上：mid、bid、bcode这三个字段。
+mid是当前登录的会员记录ID、 
+ bid是当前登录会员所属的物业公司记录ID、 
+ bcode是当前登录会员所属物业公司的组织层级编码
+
+20170919
+
+1.入园申请   少字段 用户名账号  秋罗  OK
+
+2.省、市、区的ID、都改为用varchar(64)  待修改******  ok  
+
+3.学校接口文档 增上改查   OK
+
+4.新增客源的时候,客源编号            OK             ,房源编号 未设置   
+
+5.导出Excel文件:            OK
+
+设置模板, 路径   OK
+  
+查询出list   ok 
+
+导出的路径 , 不适用, 保存到其他位置
+
+6.新增客源  预算价格, 预算面积  截取字符串
+
+
+
+
+1.预定房间, 周六晚上去大梅沙休息
+
+2.买睡垫, 在公司可以休息
+
+3.晚上早点睡觉! 年轻人, 好的睡眠, 第二天状态会好一些!还有睡觉前别胡思乱想!
+
+4.买一包利是糖 :薄荷口味,到公司分给同事
+
+
+
+
+20170918
+1.app  我的客源  搜索: 小区/编号/区域(地址)   地址?  BO需要添加一个属性接收;   no  使用区域的查询   OK
+APP接口文档要修改
+
+2.产品必须提前2演练!
+
+产品发布前, 必须演练100次.
+
+产品发布时,所有人必须到场!
+
+3.客源委托表:新增字段: 经纪人电话,物业人电话   OK
+
+4.客源编号,房源编号 未设置
+任务:
+
+APP经纪人 我的客源:
+
+列表:意向区域,预算价格	
+
+新增房源委托
+
+
+物业管家 新增客源委托   
+
+
+到此   物业管家 委托经纪人   ******************
+
+20170917
+02
+1.在入园申请表 新增字段 带看反馈 
+
+2.意见和反馈,新增要上传图片
+
+
+20170916
+09                         OK
+1.新增客源,入园申请
+
+2.文档更新到  客源委托详情   
+
+3.visitHouseRecord  新增字段   `is_reply` int(11) DEFAULT 0 COMMENT '是否已经反馈  0：否，1：是',    OK
+
+4. 取消入园 APP接口   ok 
+
+5.获取二维码 图片     ok 
+
+
+xml 文件
+  <!--查看入园二维码-->
+    <select id="getQrCord" parameterType="long"
+            resultType="com.einwin.uhouse.house.api.model.VisitHouseRecord">
+        select
+        visit_qr_img_url visitQrImgUrl,         设置别名 与对象属性相同,才可以映射值
+        visit_qr_code_num visitQrCodeNum
+        from visit_house_record
+        <where>
+            enabled_flag=1
+            AND id = #{value}
+        </where>
+    </select>
+
+
+20170915
+08 
+
+
+20170914
+1.06集  ok 
+2.房源委托评论, 客源委托评论  分开   OK  
+3.房源验真评论 ----
+
+4.feedback模块 大换血, 
+后台条件查询列表查询,
+对象属性根据数据库表更新
+
+count  入参类 
+search 查询条件
+
+做好
+CheckcommentMapper.xml  
+开始修改  客源委托评论
+
+
+
+20170913
+1.中午看03集  OK
+
+2.经纪人  我的客源 搜索模块方法实现   OK 
+客源委托完成 
+
+3.后台，业务管理，房源验真记录（0.5天） 
+
+4.新增入园申请记录时, 注意设置其他对象的信息 小区,经纪人等   在web层 或者 APP层 新增记录
+
+5.问题: 户型 怎么处理, 客源表和客源委托表 不一样
+
+新增客源,意向小区能否根据省市区 来下拉列表, 像入园申请中的申请小区
+
+6.搞明白入园申请记录, 二维码上传upload方法的过程
+
+7.总结:
+关于时间属性的处理
+xml文件:    jdbcType:TimeStamps
+BO对象属性  String  
+model对象:  Timestamp  添加标签 限定格式 
+@JsonFormat(
+            pattern = "yyyy-MM-dd HH:mm:ss",
+            timezone = "GMT+8"
+    )
+
+
+
+
+教学生 体会
+生动形象 剑掉了怎么办, 手和剑合一, 手会掉吗?
+
+我永远不会有进步, 但是你也不能退缩.
+
+20170912
+1.后台，业务管理，入园申请记录。（1天）  
+单模块基本查询列表           字段的冗余  下午  OK 
+ 
+查询(条件查询)  待测试  OK  接口文档修改
+
+新增(冗余字段需要保存数据)设置经纪人信息  待完善 
+
+扫码入园的时候(设置门岗人员信息)  待完善  
+
+
+2.地铁模块的接口文档, 结果数据更新    OK
+
+3.经纪人  我的客源 搜索模块方法实现  
+
+新增客源时候, 设置小区信息,id , 名称
+
+对于Mysql的数据库：
+一般对于对个字段模糊查询的sql写法例如：
+[sql] view plain copy print?
+select * from Table1 where name like '%xxx%' or info like '%xxx%'  
+
+
+
+ 这样数据库执行起来效率十分低下，一个两个字段还好，一旦需要模糊查询的字段比较多的时候，问题就会出现，同时，开发人员需要拼接多个like
+更好的办法：
+ 在mysql中可以使用concat函数，将多个字段先拼接起来，然后再进行like的模糊匹配。
+[sql] view plain copy print?
+select * from Table1 where concat('name','info') like '%xxx%'  
+
+4.房源举报和客源共享举报的表设计
+
+
+入参 省市区 统一修改为id
+
+common 地铁商圈学校区域 列表的返回值都是分页结果   OK
+
+5.带看反馈 与点赞
+
+
+
+
+20170911
+1.修改APP接口 返回值统一 responseData  , 将map进行包装成responseData
+
+
+修改list的返回值: remoteService 和 controller  Client
+Customer   OK
+
+2.修改接口文档路径 返回值
+
+3.文件上传下载
+
+
+问题: 
+com.netflix.client.ClientException:
+ Load balancer does not have available server for client: ening-house-customer
+重启idea 后,解决问题
+
+
+
+
+钟炜坤
+1.app接口文档编写。（1天）
+
+2.app-物业管家，客源管理（我的客源）。（1天） 客源委托  OK
+
+3.app-经纪人，我的客源。（2天）   
+
+
+4.后台，业务管理，入园申请记录。（1天）  ok
+
+根据入参, 设置条件, 执行查询得出多个list,
+
+遍历list 取出数据, 设置到出参list,并封装到responseData返回 
+
+
+
+增(生成二维码)   删改  OK
+
+查  预约入园列表 详情  OK
+
+入园  返回二维码图片 OK
+
+
+钟炜坤
+1.数据维护-商圈管理  （1天）  OK
+
+2.数据维护-地铁管理  （1天）  OK
+
+3.数据维护-学校管理  （1天）  OK
+
+4.客源管理-求租/求购客源（1天） OK
+  
+5.委托管理-房源委托   （1天） OK   
+
+
+
+20170909
+1.中午联系跃, 看看晚上去游泳, 宝体或者鸿景园  ok
+
+2.接口暴露成功
+
+1.app customerController 共享详情, 求购/求租共享列表  显示字段
+
+2.app-物业管家 我的客源 方法补充 统计客源数量 : 租房数量, 买房数量
+
+
+20170908
+1.解决bug 插入数据库 图片路径失败, 在xml文件添加字段和属性的对应关系, 即可
+
+2.new Timestamp(new Date().getTime())
+
+
+
+20170907
+计划: 
+1.  feedback模块代码修改,
+
+2.昨日记录, 今天记录 发微信
+
+3.后台，业务管理，入园申请记录。（1天）
+
+4.app-物业管家，客源管理（我的客源）。（1天） 客源委托
+
+
+
+
+
+
+
+
+20170906
+1.area 管理  新增  列表
+
+2.app接口  remote  --> client 中 接口service extends 接口remote  -->   appController  注入  client 的service  , 调用方法
+ 
+
+20170905
+http://api.fecpaas.com/index.php?s=/home/page/edit/page_id/277  
+接口文档
+
+修改 数据库表, 对象属性, mapper.xml文件修改,
+
+1.house provider 依赖 api失败  : pom文件reimport 并且修改maven setting.xml文件
+
+2.明确关系:  入园记录  >  带看记录(看房记录)  >  入园评论
+
+新增评论  将评论信息 分别添加到 物业人的评论信息中(遍历该人的标签 ,判断 有就加1, 无则新增)
+
+
+
+需求问题:
+1.房源新增并委托   ok
+2.小区的controller 方法page DistrictQuery中包含小区, 能够获取到
+
+20170904
+1.修改feedback.sql表 房源委托表,客源委托表,房源验真表. 使用union all查询, 关联查询  no 不行
+
+2.
+
+
+问题:
+1. Request processing failed; nested exception is com.einwin.framework.exception.ApplicationException: 数据新增失败！
+mapper.xml文件  字段有问题	
+
+
+20170902周六晚上
+问题:
+1.后台管理, 接口文档, 委托评价应该分开  房源和客源   路径待修改
+
+2.经纪人举报表: 添加字段   客源类别：1求租 2求购----> 修改数据库, 对象属性
+
+3.经纪人id  userId---> agentId
+
+4.客源委托单  委托状态(1:待委托,2:已委托,3:已取消,4:已完成,5:已评价)',    修改接口文档
+客源委托单    `service_type` CHAR(1) DEFAULT NULL !
+
+5.APP经纪人  委托评论列表 应该分开  房源和客源   路径待修改
+
+6.APP经纪人  带看记录  带看反馈-->对物业人员的评论
+
+7.新增  20170903  钟炜坤  创建【带看记录评论(经纪人对物业人员)】表  -->feedback
+
+8.我的评价: 
+经纪人对物业管家的评论: 房源委托, 客源委托, 房源验真评论  三张表  分三次查询 后再组合返回
+经纪人对门岗人员的评论: 入园评论
+
+APP 物业相关     物业人员对经纪人的评论: 房源委托, 客源委托  评论
+
+9.后台管理, 委托评论 : 房源委托, 客源委托  评论  (与第一条重复)
+
+
+写到我的举报
+
+
+
+
+
+
+20170901
+运气跟缘分，大概是取得成功的主要因素！ 
+再多努力也换不来，但是并不是说不用努力，不要太在乎结果，反正生命就这么短，结果不重要，内心要平静，心态随和。
+
+
+20170904
+新增客源 保存日志记录
+
+20170901  20170901  20170901
+
+1. 关联表的删除,  客源表中 `follow_up_log_id` INT(11) DEFAULT NULL COMMENT '跟进内容表ID',删除?
+
+2. 定时任务: @JobHandlerTag有三个参数,
+
+
+今天任务:
+1.app接口文档:我的客源, 客源委托,我的客源共享,我的举报, 我收到的评价, 我的评价
+写到房源委托发布...
+
+2.客源模块代码提交;
+
+3.看代码 member
+非空判断; 
+创建其他对象, 设置属性, 保存
+
+
+
+
+20170831 
+common模块的增删改查,   
+1. 客源模块的  客源管理, 客源委托, 客源记录 3小时  , APP的接口文档1小时
+2. 学习springcloud  , 1-2小时
+3. bootstrap.yml的作用  10分钟
+4. 高级sql语句
+
+技巧: 1. xml文件
+        BaseResultMap  表字段, 对象字段都有
+
+问题:
+1. sql 注入攻击?
+2. remoteService  需要写吗?  需要
+
+
+项目技术 :
+
+1.导入导出Excel文件
+
+2.定时任务
+
+3.自动推荐经纪人  排序
+
+
+
+
+
+
+
+20170830周三
+问题:1. house模块的api结构有问题  java 
+     2. 数据库名称  "-"  改成  "_"
+     3. customer循环依赖cms
+     4. application.yml  mybatis  注意
+
+        mapperLocations: classpath*:com/einwin/uhouse/common/mapper/*.xml
+
+
+1. 写mapper.xml文件  客源, 地铁, 学校 模块
+
+
+
+20170824 周五
+憋哈哈了, 做好高压,奔溃的心理准备, 免得下周遇到难题心态又奔溃. 哈哈哈, 让你现在哈哈哈, 不必过于担心, 按部就班做
+
+
+
+
+20170823 
+1.统计次数: 扫码次数(建立一张日志记录表 ,记录次数)    待定
+
+2.创建点赞表, 负责带看反馈的点赞, 明天完成    ok 
+
+3.互评表 修改  ok 
+
+
+
+修改sql字段，与他们的基本字段统一
+
+根据原型rp  ，修改sql的字段， 并且修改接口文档
+
+
+学校字段
+  `school_name` varchar(256) DEFAULT NULL COMMENT '学校名称',
+  `school_used_name` varchar(256) DEFAULT NULL COMMENT '学校曾用名称',
+  `school_style` CHAR(1) DEFAULT 1 COMMENT '办学性质：1公办学校 2民办学校',
+  `school_numerus_Clausus` int(256) DEFAULT NULL COMMENT '名额限制',
+  `school_address` varchar(256) DEFAULT NULL COMMENT '学校详细地址',
+  `school_enrollment_scale` varchar(256) DEFAULT NULL COMMENT '招生规模',
+  `school_description` varchar(256) DEFAULT NULL COMMENT '学校简介',
+  `school_school_ethos` varchar(256) DEFAULT NULL COMMENT '学校校风',
+  `school_area` varchar(256) DEFAULT NULL COMMENT '学校占地面积',
+  `school_hardware_level` varchar(256) DEFAULT NULL COMMENT '硬件水平',
+  `school_teacher_force` varchar(256) DEFAULT NULL COMMENT '师资力量',
+  `school_history` varchar(256) DEFAULT NULL COMMENT '学校历史',
+  `school_meal` CHAR (1) DEFAULT NULL COMMENT '供餐说明(1:有,2:无)',
+  `school_extra_activities` varchar(256) DEFAULT NULL COMMENT '课余生活',
+  `school_district_id` int(11) DEFAULT NULL COMMENT '划片小区ID(多个小区ID)',
+  `school_img_url` varchar(256) DEFAULT NULL COMMENT '学校图片上传(最多五张照片,以逗号分隔)',

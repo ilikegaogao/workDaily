@@ -1,0 +1,24 @@
+	
+长城物业：
+地址：https://120.76.231.83/svn/ccwy/ 
+
+
+
+用户名：zhongweikun
+
+密码： zhongweikun0810
+
+
+
+这是公司外网svn，以后都用这个
+
+ky-zhongwk / zhong0952
+
+
+公司的项目
+svn地址：https://WIN-9RFKHK029SN:8443/svn/ccpgmall/trunk
+用户名和密码：zhongwk
+
+长城物业接口：
+api登录地址：http://api.fecpaas.com/index.php?s=/Home/User/login
+用户名和密码：zhongwk

@@ -1,0 +1,14 @@
+spring cloud 微服务之Eureka服务注册与服务发现
+链接：http://pan.baidu.com/s/1c2Ek1Ss 密码：wt00
+
+大型公司面试必答之数据结构与算法-达摩老师
+链接：http://pan.baidu.com/s/1i5KfSbF 密码：o4hg
+
+大型互联网技术实战之Zookeeper服务注册与订阅
+链接：http://pan.baidu.com/s/1kUYEDmB 密码：z3np
+
+互联网企业必备Maven使用及私服搭建
+链接：http://pan.baidu.com/s/1pLfsgqf 密码：uygc
+
+探索JVM底层奥秘ClassLoader源码分析与案例讲解
+链接：http://pan.baidu.com/s/1qYK79Wo 密码：e9zn
